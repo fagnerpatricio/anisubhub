@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My first Bulma website</title>
+    <link rel="stylesheet" href="static/legendasotaku/siteweb/templates/css/main.css" />
+
+    <!--LegendasOtaku.com css-->
+    <link rel="stylesheet" href="static/legendasotaku/siteweb/templates/css/legendasotaku.css" />
+    {% comment %}
+    <link rel="stylesheet" href="static/legendasotaku/siteweb/templates/css/landpage.css" />
+    {% endcomment %}
+
+    <!-- Fonte do Google-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and
+        security.
+      </p>
+    <![endif]-->
+    <!-- Add your site or application content here -->
+    <section>
+      <div class="container">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+              <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" />
+            </a>
+
+            <a
+              role="button"
+              class="navbar-burger burger"
+              aria-label="menu"
+              aria-expanded="false"
+              data-target="navbarBasicExample"
+            >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+          <div class="navbar-item lo-is-flex">
+            <div class="control has-icons-left has-icons-right lo-is-flex">
+              <input class="input" type="email" placeholder="Email" />
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+            </div>
+          </div>
+          <div id="navbarBasicExample" class="navbar-menu lo-no-is-flex">
+            <div class="navbar-start"></div>
+
+            <div class="navbar-end">
+              <a class="navbar-item">
+                Home
+              </a>
+
+              <a class="navbar-item">
+                Documentation
+              </a>
+              <div class="navbar-item">
+                <div class="buttons">
+                  <a class="button is-primary">
+                    <strong>Sign up</strong>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <section class="section management-navbar is-size-7">
+      <div class="container">
+        <div class="columns is-gapless is-mobile">
+          <div class="column is-narrow text-left">
+            <strong class="slogan">
+              The Independent Software Marketplace
+            </strong>
+          </div>
+          <div class="column">
+            <a href="/register" rel="nofollow">Register</a>
+            &nbsp; | &nbsp;
+            <a href="/login" rel="nofollow">login</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="hero is-homepage is-low">
+      <div class="hero-body is-patterned">
+        <div class="container">
+          <h1 class="title has-text-centered">
+            Hero title
+          </h1>
+          <div class="columns">
+            <div class="column sessao-mais-baixados has-text-black">
+              <h4 class="title is-4 has-text-centered has-text-black">
+                Hero title 2
+              </h4>
+              <article class="media">
+                <figure class="media-left">
+                  <p class="image is-64x64">
+                    <img src="static/legendasotaku/siteweb/templates/img/pngwing.com.png" />
+                  </p>
+                </figure>
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>John Smith</strong> <small>@johnsmith</small>
+                      <br />
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna
+                      eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam
+                      finibus odio quis feugiat facilisis.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="column sessao-mais-baixados has-text-black">
+              <h4 class="title is-4 has-text-centered has-text-black">
+                Hero title 3
+              </h4>
+              <article class="media">
+                <figure class="media-left">
+                  <p class="image is-64x64">
+                    <img src="static/legendasotaku/siteweb/templates/img/Kohane_Hatoya.jpg" />
+                  </p>
+                </figure>
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>John Smith</strong> <small>@johnsmith</small>
+                      <br />
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna
+                      eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam
+                      finibus odio quis feugiat facilisis.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <h1 class="title has-text-centered">Section</h1>
+        <h2 class="subtitle has-text-centered">
+          A simple container to divide your page into <strong>sections</strong>, like the one you're
+          currently reading
+        </h2>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">
+          Hero title 4
+        </h1>
+        <div class="columns">
+          <div class="column lo-column has-text-black">
+            <article class="media lo-media">
+              <figure class="media-left">
+                <p class="image is-64x64">
+                  <img src="static/legendasotaku/siteweb/templates/img/pngwing.com.png" />
+                </p>
+              </figure>
+              <div class="media-content">
+                <div class="content">
+                  <div class="is-marginless is-paddingless">
+                    <span class="fa-stack has-text-success">
+                      <i class="fas fa-certificate fa-stack-2x"></i>
+                      <i class="fas fa-check fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <strong class="is-size-4 has-text-info"> K-ON! </strong>
+                    <small>
+                      <ul id="navlist" class="is-marginless is-paddingless">
+                        <li><a href="#">2009</a></li>
+                        <li><a href="#">1º temporada</a></li>
+                        <li><a href="#">24 episódios</a></li>
+                      </ul>
+                    </small>
+                  </div>
+                  <div>
+                    <nav class="level is-marginless is-paddingless">
+                      <div class="level-left">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                      </div>
+                      <div class="level-right">
+                        4.1 average based on 254 reviews.
+                      </div>
+                    </nav>
+                  </div>
+                  <div>
+                    <nav class="level">
+                      <div class="level-left">
+                        <button class="button is-info">
+                          <span class="icon"> <i class="fas fa-file-download"></i> </span
+                          ><span>
+                            Baixar
+                          </span>
+                        </button>
+                      </div>
+                      <div class="leve-right">
+                        <div class="buttons has-addons">
+                          <button class="button is-small is-text">
+                            <img
+                              class="img-logos"
+                              src="static/legendasotaku/siteweb/templates/img/myanimelist_logo.svg"
+                            />
+                          </button>
+                          <button class="button is-small is-text">
+                            <img
+                              class="img-logos"
+                              src="static/legendasotaku/siteweb/templates/img/Anidb-plain.png"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="media lo-media">
+              <figure class="media-left">
+                <p class="image is-64x64">
+                  <img src="static/legendasotaku/siteweb/templates/img/pngwing.com.png" />
+                </p>
+              </figure>
+              <div class="media-content">
+                <div class="content">
+                  <div class="is-marginless is-paddingless">
+                    <span class="fa-stack has-text-success">
+                      <i class="fas fa-certificate fa-stack-2x"></i>
+                      <i class="fas fa-check fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <strong class="is-size-4 has-text-info"> K-ON! </strong>
+                    <small>
+                      <ul id="navlist" class="is-marginless is-paddingless">
+                        <li><a href="#">2009</a></li>
+                        <li><a href="#">1º temporada</a></li>
+                        <li><a href="#">24 episódios</a></li>
+                      </ul>
+                    </small>
+                  </div>
+                  <div>
+                    <nav class="level is-marginless is-paddingless">
+                      <div class="level-left">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                      </div>
+                      <div class="level-right">
+                        4.1 average based on 254 reviews.
+                      </div>
+                    </nav>
+                  </div>
+                  <div>
+                    <nav class="level">
+                      <div class="level-left">
+                        <button class="button is-info">
+                          <span class="icon"> <i class="fas fa-file-download"></i> </span
+                          ><span>
+                            Baixar
+                          </span>
+                        </button>
+                      </div>
+                      <div class="leve-right">
+                        <div class="buttons has-addons">
+                          <button class="button is-small is-text">
+                            <img
+                              class="img-logos"
+                              src="static/legendasotaku/siteweb/templates/img/myanimelist_logo.svg"
+                            />
+                          </button>
+                          <button class="button is-small is-text">
+                            <img
+                              class="img-logos"
+                              src="static/legendasotaku/siteweb/templates/img/Anidb-plain.png"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="column is-4 sessao-mais-baixados has-text-black">
+            <article class="media">
+              <figure class="media-left">
+                <p class="image is-64x64">
+                  <img src="static/legendasotaku/siteweb/templates/img/Kohane_Hatoya.jpg" />
+                </p>
+              </figure>
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <strong>John Smith</strong> <small>@johnsmith</small>
+                    <br />
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna
+                    eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam
+                    finibus odio quis feugiat facilisis.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---->
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>');
+    </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+body {
+    background-color: #f6f9fc;
+    color: #fcf6f6;
+}
+
+.container {
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+.lo-is-flex {
+    flex-grow: 1 !important;
+}
+
+.lo-no-is-flex {
+    flex-grow: 0 !important;
+}
+
+.management-navbar {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: right;
+    /* background-color: #4877a9; */
+    background-color: rgb(47, 111, 179);
+    color: #fff !important;
+    font-weight: 400;
+}
+
+.management-navbar .slogan {
+    cursor: default;
+    color: #fff;
+}
+
+.management-navbar a {
+    color: #fff;
+}
+
+.sessao-mais-baixados {
+    height: 100% !important;
+    padding: 1rem !important;
+    border-radius: 3px !important;
+    background: #fff !important;
+}
+
+.sessao-mais-baixados:first-child {
+    margin-right: 0.5rem !important;
+}
+
+.sessao-mais-baixados:last-child {
+    margin-left: 0.5rem !important;
+}
+
+.hero.is-homepage {
+    /* background: linear-gradient(135deg,#6d96c1,#b5c9df); */
+    background-color: #7f53ac;
+    background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+}
+
+.is-patterned {
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj48ZGVmcz48cGF0dGVybiBpZD0icGF0dGVybiIgd2lkdGg9IjMwIiBoZWlnaHQ9IjMwIiB2aWV3Qm94PSIwIDAgNDAgNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IGlkPSJwYXR0ZXJuLWJhY2tncm91bmQiIHg9IjAiIHk9IjAiIHdpZHRoPSI0MDAlIiBoZWlnaHQ9IjQwMCUiIGZpbGw9IiM2M2IzZWQiLz4gPGNpcmNsZSBjeD0iMzAiIGN5PSIyMCIgcj0iMy41IiBmaWxsPSIjMmI2Y2IwIiBzdHJva2U9IiMyYjZjYjAiIHN0cm9rZS13aWR0aD0iMCIvPiA8IS0tLS0+IDwhLS0tLT4gICAgPGNpcmNsZSBjeD0iMTAiIGN5PSIyMCIgcj0iMS43NSIgZmlsbD0iIzJhNDM2NSIgc3Ryb2tlPSIjMmE0MzY1IiBzdHJva2Utd2lkdGg9IjAiLz4gPCEtLS0tPiA8IS0tLS0+ICAgIDwvcGF0dGVybj48L2RlZnM+IDxyZWN0IGZpbGw9InVybCgjcGF0dGVybikiIGhlaWdodD0iMTAwJSIgd2lkdGg9IjEwMCUiIHk9IjAiIHg9IjAiLz48L3N2Zz4=");
+    /* background: repeat top url(data:image/svg+xml;base64,PHN2ZyBkYXRhLW5hbWU9IkxheWVyIDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDI4IDI4Ij48Y2lyY2xlIGN4PSIxNCIgY3k9IjE0IiByPSIyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuMTMiLz48L3N2Zz4=); */
+    /* background-size: 20px 20px; */
+}
+
+.fa-stack {
+    font-size: 0.7rem;
+}
+
+#navlist li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;
+}
+
+.is-marron {
+    background-color: #f9a954;
+    color: white;
+}
+
+.img-logos {
+    /* padding: 0rem !important;
+    margin: 0rem !important; */
+    max-height: 24px !important;
+}
+
+.lo-media {
+    background-color: white;
+    padding: 0.5rem !important;
+}
+
+.lo-column {
+    padding-top: 0rem !important;
+}
