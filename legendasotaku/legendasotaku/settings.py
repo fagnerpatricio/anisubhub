@@ -74,7 +74,7 @@ WSGI_APPLICATION = 'legendasotaku.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-#   Valores Originais
+# Valores Originais
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',
@@ -129,5 +129,5 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
-    '/home/fagner/ProjetosVSCode/LegendasOtaku',
+    '/home/fagner/ProjetosVSCode/anisubhub',
 ]
