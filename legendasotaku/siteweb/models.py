@@ -17,6 +17,9 @@ class Series(models.Model):
     arquivo_banner = models.ImageField(upload_to='legendasotaku/siteweb/templates/img/banners')
     #arquivo_do_banner = models.FilePathField(max_length=500, blank=False)
 
+    def save(self, *args, **kwargs):
+        print("Hello")
+
     def __str__(self):
         return (self.titulo + " -- (" + str(self.temporada) + "º Temporada)")
     

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My first Bulma website</title>
+    <link rel="stylesheet" href="static/legendasotaku/siteweb/templates/css/main.css" />
+
+    <!--LegendasOtaku.com css-->
+    <link rel="stylesheet" href="static/legendasotaku/siteweb/templates/css/legendasotaku.css" />
+    {% comment %}
+    <link rel="stylesheet" href="static/legendasotaku/siteweb/templates/css/landpage.css" />
+    {% endcomment %}
+
+    <!-- Fonte do Google-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and
+        security.
+      </p>
+    <![endif]-->
+    <!-- Add your site or application content here -->
+    <section>
+      <div class="container">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+              <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" />
+            </a>
+
+            <a
+              role="button"
+              class="navbar-burger burger"
+              aria-label="menu"
+              aria-expanded="false"
+              data-target="navbarBasicExample"
+            >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+          <div class="navbar-item lo-is-flex">
+            <div class="control has-icons-left has-icons-right lo-is-flex">
+              <input class="input" type="email" placeholder="Email" />
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+            </div>
+          </div>
+          <div id="navbarBasicExample" class="navbar-menu lo-no-is-flex">
+            <div class="navbar-start"></div>
+
+            <div class="navbar-end">
+              <a class="navbar-item">
+                Home
+              </a>
+
+              <a class="navbar-item">
+                Documentation
+              </a>
+              <div class="navbar-item">
+                <div class="buttons">
+                  <a class="button is-primary">
+                    <strong>Sign up</strong>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <section class="section management-navbar is-size-7">
+      <div class="container">
+        <div class="columns is-gapless is-mobile">
+          <div class="column is-narrow text-left">
+            <strong class="slogan">
+              The Independent Software Marketplace
+            </strong>
+          </div>
+          <div class="column">
+            <a href="/register" rel="nofollow">Register</a>
+            &nbsp; | &nbsp;
+            <a href="/login" rel="nofollow">login</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="hero is-homepage is-low">
+      <div class="hero-body is-patterned">
+        <div class="container">
+          <h1 class="title has-text-centered">
+            Sugestões do Editor
+          </h1>
+          <div class="columns">
+            <div class="column is-3">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-2by3">
+                    <img
+                      src="https://static.tvmaze.com/uploads/images/original_untouched/101/254486.jpg"
+                      alt="Placeholder image"
+                    />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <!-- <div class="media-left">
+                      <figure class="image is-48x48">
+                        <img
+                          src="https://bulma.io/images/placeholders/96x96.png"
+                          alt="Placeholder image"
+                        />
+                      </figure>
+                    </div> -->
+                    <div class="media-content">
+                      <p class="title is-4">Eromanga Sensei</p>
+                      <p class="subtitle is-6">@johnsmith</p>
+                    </div>
+                  </div>
+
+                  <!-- <div class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis
+                    mauris. <a>@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
+                    <br />
+                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- <div class="column sessao-mais-baixados has-text-black">
+              <h4 class="title is-4 has-text-centered has-text-black">
+                Hero title 2
+              </h4>
+              <article class="media">
+                <figure class="media-left">
+                  <p class="image is-64x64">
+                    <img src="static/legendasotaku/siteweb/templates/img/pngwing.com.png" />
+                  </p>
+                </figure>
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>John Smith</strong> <small>@johnsmith</small>
+                      <br />
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna
+                      eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam
+                      finibus odio quis feugiat facilisis.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="column sessao-mais-baixados has-text-black">
+              <h4 class="title is-4 has-text-centered has-text-black">
+                Hero title 3
+              </h4>
+              <article class="media">
+                <figure class="media-left">
+                  <p class="image is-64x64">
+                    <img src="static/legendasotaku/siteweb/templates/img/Kohane_Hatoya.jpg" />
+                  </p>
+                </figure>
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>John Smith</strong> <small>@johnsmith</small>
+                      <br />
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna
+                      eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam
+                      finibus odio quis feugiat facilisis.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <h1 class="title has-text-centered">Section</h1>
+        <h2 class="subtitle has-text-centered">
+          A simple container to divide your page into <strong>sections</strong>, like the one you're
+          currently reading
+        </h2>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column has-text-black">
+            <h3 class="title is-3">
+              Novas Legendas
+            </h3>
+            <ol class="sessao-novas-legendas">
+              <li>
+                <article class="media">
+                  <figure class="media-left">
+                    <p class="image is-64x64">
+                      <img src="static/legendasotaku/siteweb/templates/img/pngwing.com.png" />
+                    </p>
+                  </figure>
+                  <div class="media-content">
+                    <div class="content">
+                      <span class="fa-stack has-text-success">
+                        <i class="fas fa-certificate fa-stack-2x"></i>
+                        <i class="fas fa-check fa-stack-1x fa-inverse"></i>
+                      </span>
+                      <strong class="is-size-4 has-text-info"> K-ON! </strong>
+                      <br />
+                      <span class="tag is-link">Link</span>
+                      <span class="tag is-info">Info</span>
+                      <span class="tag is-success">Success</span>
+                      <span class="tag is-warning">Warning</span>
+                      <span class="tag is-danger">Danger</span>
+                      <!-- <small>
+                        <ol class="lista-detalhes-serie is-marginless is-paddingless">
+                          <li><a href="#">2009</a></li>
+                          <li><a href="#">1º temporada</a></li>
+                          <li><a href="#">24 episódios</a></li>
+                        </ol>
+                      </small>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, magni! Est
+                      necessitatibus, non voluptas odio aspernatur eveniet facilis. Eius dolores
+                      esse qui. Porro magni illum, non eveniet eius deleniti qui. -->
+                      <p></p>
+                      <ul class="events is-marginless is-paddingless">
+                        <li>
+                          🚀 Perído de Exibição:
+                          <strong class="tag is-white">03.04.2009 até 19.06.2009</strong>
+                        </li>
+                        <li>
+                          💲 Premiered: <span class="tag price-tag is-price-free">Spring 2009</span>
+                        </li>
+                        <li>
+                          🏁 Links Informativos:
+                          <a class="prefetch" href="/microsoft-office-alternatives">MyAnimeList</a>,
+                          <a class="prefetch" href="/microsoft-office-365-alternatives">AniDB</a>,
+                          <a class="prefetch" href="/google-drive-docs-alternatives">Trakt.tv</a>,
+                          <a class="prefetch" href="/microsoft-expression-web-alternatives">IMDB</a
+                          >,
+                          <a class="prefetch" href="/microsoft-expression-web-alternatives">TMDB</a
+                          >,
+                          <a class="prefetch" href="/microsoft-expression-web-alternatives"
+                            >TVMaze</a
+                          >
+                        </li>
+                        <li>✅ Verified</li>
+                      </ul>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            </ol>
+          </div>
+          <aside class="column is-4">
+            <h3 class="title is-3">&nbsp;</h3>
+            <div class="sidebar-box">
+              <h3 class="title is-4 section-title">Fansubs Parceiros</h3>
+              <ul class="sidebar-services-list">
+                <li class="service is-small">
+                  <a
+                    class="prefetch"
+                    data-prefetch="https://www.saashub.com/images/app/service_logos/25/850213219bf0/large.png?1547900308"
+                    href="/postmake-alternatives"
+                  >
+                    <span class="logo">
+                      <img
+                        alt="Postmake icon"
+                        src="https://www.saashub.com/images/app/service_logos/25/850213219bf0/small.png?1547900308"
+                      />
+                    </span>
+                    Postmake
+                  </a>
+                </li>
+                <li class="service is-small">
+                  <a
+                    class="prefetch"
+                    data-prefetch="https://www.saashub.com/images/app/service_logos/6/bb657f42a46a/large.png?1525413799"
+                    href="/contify-alternatives"
+                  >
+                    <span class="logo">
+                      <img
+                        alt="Contify icon"
+                        src="https://www.saashub.com/images/app/service_logos/6/bb657f42a46a/small.png?1525413799"
+                      />
+                    </span>
+                    Contify
+                  </a>
+                </li>
+                <li class="service is-small">
+                  <a
+                    class="prefetch"
+                    data-prefetch="https://www.saashub.com/images/app/service_logos/45/12d1d0eb5855/large.png?1574079164"
+                    href="/xobin-alternatives"
+                  >
+                    <span class="logo">
+                      <img
+                        alt="Xobin icon"
+                        src="https://www.saashub.com/images/app/service_logos/45/12d1d0eb5855/small.png?1574079164"
+                      />
+                    </span>
+                    Xobin
+                  </a>
+                </li>
+                <li class="service is-small">
+                  <a
+                    class="prefetch"
+                    data-prefetch="https://www.saashub.com/images/app/service_logos/24/00b9d35d3b82/large.png?1547718613"
+                    href="/vitally-alternatives"
+                  >
+                    <span class="logo">
+                      <img
+                        alt="Vitally icon"
+                        src="https://www.saashub.com/images/app/service_logos/24/00b9d35d3b82/small.png?1547718613"
+                      />
+                    </span>
+                    Vitally
+                  </a>
+                </li>
+                <li class="service is-small">
+                  <a
+                    class="prefetch"
+                    data-prefetch="https://www.saashub.com/images/app/service_logos/10/46d2d23ac47d/large.png?1528900813"
+                    href="/cloud-cms-alternatives"
+                  >
+                    <span class="logo">
+                      <img
+                        alt="Cloud CMS icon"
+                        src="https://www.saashub.com/images/app/service_logos/10/46d2d23ac47d/small.png?1528900813"
+                      />
+                    </span>
+                    Cloud CMS
+                  </a>
+                </li>
+                <li class="service is-small">
+                  <a
+                    class="prefetch"
+                    data-prefetch="https://www.saashub.com/images/app/service_logos/94/af6499fbe664/large.png?1571867483"
+                    href="/sysvita-ost-to-pst-converter-alternatives"
+                  >
+                    <span class="logo">
+                      <img
+                        alt="SysVita OST to PST Converter icon"
+                        src="https://www.saashub.com/images/app/service_logos/94/af6499fbe664/small.png?1571867483"
+                      />
+                    </span>
+                    SysVita OST to PST Converter
+                  </a>
+                </li>
+                <li class="service is-small">
+                  <a
+                    class="prefetch"
+                    data-prefetch="https://www.saashub.com/images/app/service_logos/17/df84c0d37ede/large.png?1574084436"
+                    href="/purelyhr-alternatives"
+                  >
+                    <span class="logo">
+                      <img
+                        alt="PurelyHR icon"
+                        src="https://www.saashub.com/images/app/service_logos/17/df84c0d37ede/small.png?1574084436"
+                      />
+                    </span>
+                    PurelyHR
+                  </a>
+                </li>
+                <li class="service is-small">
+                  <a
+                    class="prefetch"
+                    data-prefetch="https://www.saashub.com/images/app/service_logos/24/47f41b784346/large.png?1547246825"
+                    href="/insided-alternatives"
+                  >
+                    <span class="logo">
+                      <img
+                        alt="inSided icon"
+                        src="https://www.saashub.com/images/app/service_logos/24/47f41b784346/small.png?1547246825"
+                      />
+                    </span>
+                    inSided
+                  </a>
+                </li>
+                <li class="service is-small">
+                  <a
+                    class="prefetch"
+                    data-prefetch="https://www.saashub.com/images/app/service_logos/6/9dc42c084755/large.png?1525413771"
+                    href="/norkon-live-center-alternatives"
+                  >
+                    <span class="logo">
+                      <img
+                        alt="Norkon Live Center icon"
+                        src="https://www.saashub.com/images/app/service_logos/6/9dc42c084755/small.png?1525413771"
+                      />
+                    </span>
+                    Norkon Live Center
+                  </a>
+                </li>
+                <li class="service is-small">
+                  <a
+                    class="prefetch"
+                    data-prefetch="https://www.saashub.com/images/app/service_logos/68/0c379f3074cc/large.png?1574018218"
+                    href="/lynkme-io-alternatives"
+                  >
+                    <span class="logo">
+                      <img
+                        alt="LynkMe.io icon"
+                        src="https://www.saashub.com/images/app/service_logos/68/0c379f3074cc/small.png?1574018218"
+                      />
+                    </span>
+                    LynkMe.io
+                  </a>
+                </li>
+                <li class="service is-small">
+                  <a
+                    class="prefetch"
+                    data-prefetch="https://www.saashub.com/images/app/service_logos/50/5593642ba564/large.png?1558016161"
+                    href="/ucrawler-alternatives"
+                  >
+                    <span class="logo">
+                      <img
+                        alt="uCrawler icon"
+                        src="https://www.saashub.com/images/app/service_logos/50/5593642ba564/small.png?1558016161"
+                      />
+                    </span>
+                    uCrawler
+                  </a>
+                </li>
+                <li class="service is-small">
+                  <a
+                    class="prefetch"
+                    data-prefetch="https://www.saashub.com/images/app/service_logos/44/845f4a8909b1/large.png?1555428329"
+                    href="/upvoty-alternatives"
+                  >
+                    <span class="logo">
+                      <img
+                        alt="Upvoty icon"
+                        src="https://www.saashub.com/images/app/service_logos/44/845f4a8909b1/small.png?1555428329"
+                      />
+                    </span>
+                    Upvoty
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <!---->
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>');
+    </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </body>
+</html>

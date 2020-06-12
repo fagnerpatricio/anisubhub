@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My first Bulma website</title>
+    <link rel="stylesheet" href="static/legendasotaku/siteweb/templates/css/main.css" />
+
+    <!--LegendasOtaku.com css-->
+    <link rel="stylesheet" href="static/legendasotaku/siteweb/templates/css/legendasotaku.css" />
+    {% comment %}
+    <link rel="stylesheet" href="static/legendasotaku/siteweb/templates/css/landpage.css" />
+    {% endcomment %}
+
+    <!-- Fonte do Google-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and
+        security.
+      </p>
+    <![endif]-->
+    <!-- Add your site or application content here -->
+      {% block corpo %}
+      {% endblock corpo %}
+    <!---->
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>');
+    </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </body>
+</html>
