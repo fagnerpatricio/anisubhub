@@ -72,84 +72,31 @@
       </h1>
       <div class="columns">
         <div class="column is-3">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="columns is-multiline">
+        {% for titulo, url in urls_figuras %}
+        <div class="column is-3">
           <div class="card">
             <div class="card-image">
               <figure class="image is-2by3">
-                <img src="https://static.tvmaze.com/uploads/images/original_untouched/101/254486.jpg"
+                <img src={{ url }}
                   alt="Placeholder image" />
               </figure>
             </div>
             <div class="card-content">
               <div class="media">
-                <!-- <div class="media-left">
-                      <figure class="image is-48x48">
-                        <img
-                          src="https://bulma.io/images/placeholders/96x96.png"
-                          alt="Placeholder image"
-                        />
-                      </figure>
-                    </div> -->
                 <div class="media-content">
-                  <p class="title is-4">Eromanga Sensei</p>
+                  <p class="title is-4">{{ titulo }}</p>
                   <p class="subtitle is-6">@johnsmith</p>
                 </div>
               </div>
-
-              <!-- <div class="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis
-                    mauris. <a>@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
-                    <br />
-                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                  </div> -->
             </div>
           </div>
         </div>
-        <!-- <div class="column sessao-mais-baixados has-text-black">
-              <h4 class="title is-4 has-text-centered has-text-black">
-                Hero title 2
-              </h4>
-              <article class="media">
-                <figure class="media-left">
-                  <p class="image is-64x64">
-                    <img src="static/legendasotaku/siteweb/templates/img/pngwing.com.png" />
-                  </p>
-                </figure>
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <strong>John Smith</strong> <small>@johnsmith</small>
-                      <br />
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna
-                      eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam
-                      finibus odio quis feugiat facilisis.
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="column sessao-mais-baixados has-text-black">
-              <h4 class="title is-4 has-text-centered has-text-black">
-                Hero title 3
-              </h4>
-              <article class="media">
-                <figure class="media-left">
-                  <p class="image is-64x64">
-                    <img src="static/legendasotaku/siteweb/templates/img/Kohane_Hatoya.jpg" />
-                  </p>
-                </figure>
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <strong>John Smith</strong> <small>@johnsmith</small>
-                      <br />
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna
-                      eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam
-                      finibus odio quis feugiat facilisis.
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </div> -->
+        {% endfor %}
       </div>
     </div>
   </div>
@@ -191,16 +138,6 @@
                   <span class="tag is-success">Success</span>
                   <span class="tag is-warning">Warning</span>
                   <span class="tag is-danger">Danger</span>
-                  <!-- <small>
-                        <ol class="lista-detalhes-serie is-marginless is-paddingless">
-                          <li><a href="#">2009</a></li>
-                          <li><a href="#">1º temporada</a></li>
-                          <li><a href="#">24 episódios</a></li>
-                        </ol>
-                      </small>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, magni! Est
-                      necessitatibus, non voluptas odio aspernatur eveniet facilis. Eius dolores
-                      esse qui. Porro magni illum, non eveniet eius deleniti qui. -->
                   <p></p>
                   <ul class="events is-marginless is-paddingless">
                     <li>
